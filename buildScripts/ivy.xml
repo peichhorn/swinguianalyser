@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ivy-module version="2.0">
+  <info organisation="de.fips" module="swinguianalyser" />
+  <configurations>
+    <conf name="build" />
+    <conf name="runtime" />
+    <conf name="test" extends="build, runtime" />
+    <conf name="contrib" />
+  </configurations>
+  <dependencies>
+    <dependency org="junit" name="junit" rev="4.8.2" conf="test->default; contrib->sources" />
+    <dependency org="org.mockito" name="mockito-all" rev="1.8.5" conf="test->default; contrib->sources" />
+    <dependency org="org.easytesting" name="fest-assert" rev="1.4" conf="test->default; contrib->sources" />
+    <dependency org="org.easytesting" name="fest-util" rev="1.1.6" conf="build->default; contrib->sources" />
+	<dependency org="asm" name="asm-all" rev="3.3" conf="build->default" />
+	<dependency org="com.jgoodies" name="forms" rev="1.2.1" conf="build->default" />
+	
+	<dependency org="com.sun" name="attach" rev="1.6" conf="build; runtime" />
+    <dependency org="de.fips" name="lombok-pg" rev="0.10.0-BETA2-HEAD" conf="build" />
+	<dependency org="de.fips" name="tinybinding" rev="1.0.2" conf="build" />
+	<dependency org="com.googlecode.json-simple" name="json-simple" rev="1.1" conf="build" />
+  </dependencies>
+</ivy-module>

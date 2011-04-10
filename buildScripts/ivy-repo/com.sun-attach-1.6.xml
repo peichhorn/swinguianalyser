@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ivy-module version="2.0">
+  <info organisation="com.sun" module="attach" revision="1.6" />
+  <configurations>
+  <conf name="build" />
+	<conf name="runtime" />
+  </configurations>
+  <publications>
+	<artifact conf="build"
+      url="http://cloud.github.com/downloads/peichhorn/swinguianalyser/attach-1.6.jar" />
+	<artifact conf="runtime"
+      url="http://cloud.github.com/downloads/peichhorn/swinguianalyser/attach-1.6.dll" type="dll" />
+  </publications>
+</ivy-module>
